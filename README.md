@@ -2,4 +2,4 @@
 
 ## This is my Final Year Project. Will update the details of the description soon. 
 
-Uploaded now to have version control. Peace :).
+Uploaded to have version control. Peace :).
