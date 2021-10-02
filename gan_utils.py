@@ -1,3 +1,6 @@
+import tensorflow.compat.v1 as tf
+import numpy as np
+
 ## UTIL FOR GAN IMPUTER
 class GanUtil:
     '''Utility functions for GAIN.
@@ -11,7 +14,7 @@ class GanUtil:
     (8) sample_batch_index: sample random batch index
     ''' 
     ##IF USING TF 2 use following import to still use TF < 2.0 Functionalities
-    import tensorflow.compat.v1 as tf
+
     tf.disable_v2_behavior()
 
     def normalization (self, data, parameters=None):

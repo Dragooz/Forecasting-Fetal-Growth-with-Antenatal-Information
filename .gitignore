@@ -11,6 +11,7 @@ __pycache__/
 #data
 *.xlsx
 *.csv
+data/
 
 # C extensions
 *.so
