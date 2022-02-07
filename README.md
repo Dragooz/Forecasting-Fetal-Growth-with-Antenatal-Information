@@ -9,10 +9,12 @@ There's two part in this project:
 In this project, I'm working with antenatal information of singleton pregnant women, from 2 different countries, which are Singapore and Malaysia. Below are the flow chart of how I handled those 2 dataset.
 
 #### Data Handling on Singapore dataset.
-![singapore dataset flow drawiov6](https://user-images.githubusercontent.com/47239545/146946758-67fa536f-2e0b-4156-89ef-e47fde4efe30.png)
+![singapore dataset flow drawiov8](https://user-images.githubusercontent.com/47239545/152730316-eb935f5e-ff19-499f-bb15-7698f90df7eb.png)
+
 
 #### Data Handling on Malaysia dataset.
-![malaysia dataset flow drawiov8](https://user-images.githubusercontent.com/47239545/146946820-91a90e6f-2bf6-4293-bb23-22fbb7c8da33.png)
+![malaysia dataset flow drawiov10](https://user-images.githubusercontent.com/47239545/152730307-46ccc6c2-fda4-4e09-9e03-32fd953a00fb.png)
+
 
 ### Training + Deploying Machine Learning model 
 There's total of 4 machine learning models outcome here, 2 models for each country.
