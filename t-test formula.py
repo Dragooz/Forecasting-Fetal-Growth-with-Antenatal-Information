@@ -1,4 +1,5 @@
 import math
+import scipy.stats
 
 features_22 = ['CM_22', 'BPD_22', 'FL_22', 'GA(week)_22', 'HC_22', 'AC_22', 'EFW_22']
 
@@ -28,9 +29,12 @@ for f, y1_, y2_, s1_, s2_ in zip(features_22, y1_22, y2_22, s1_22, s2_22):
 	t = abs( (y1_-y2_)/ (math.sqrt( ((s1_**2)/n1_22) + ((s2_**2)/n2_22) ) ))
 
 	if t>critical_val:
-		print(f'{round(t,3)}')
+		print(f'T-Value: {round(t,3)}')
+		#Reference: https://www.socscistatistics.com/pvalues/tdistribution.aspx
 	else:
-		print(f'NO! {round(t,3)}')
+		print(f'NO! T-Value: {round(t,3)}')
+
+	print(f'P-Value: {round(scipy.stats.t.sf(abs(t), df=(n1_22+n2_22-2))*2,7)}')
 
 print('-' * 30)
 
@@ -41,5 +45,8 @@ for f, y1_, y2_, s1_, s2_ in zip(features_32_35, y1_32_35, y2_32_35, s1_32_35, s
 		print(f'{round(t,3)}')
 	else:
 		print(f'NO! {round(t,3)}')
+
+	print(f'P-Value: {round(scipy.stats.t.sf(abs(t), df=(n1_32_35+n2_32_35-2))*2,7)}')
+
 
 # print( abs( (30.48101- 20.14458)/ (math.sqrt( ((6.10771**2)/79) + ((6.41470**2)/249) ) ) ) )
